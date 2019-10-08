@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./assets/css/estilos.css">
+	<script type="text/javascript" src="./assets/js/login.js"></script>
+</head>
+<body>
+
+	<main>
+		<article>
+			<div class="cabecalho">
+				<strong>Bem-vindo</strong>
+				<p>Informe seus dados para acessar o sistema</p>
+				<p id="falha"></p>
+			</div>
+
+			<form onsubmit="return false">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="Informe seu e-mail">
+				<label for="senha">Senha</label>
+				<input type="password" name="senha" id="senha" placeholder="Informe sua senha">
+				<input class="btn" onClick="logar()" type="submit" value="Acessar">
+			</form>
+			<a href="#">Esqueci a senha</a>
+		</article>
+	</main>
+</body>
+</html>
